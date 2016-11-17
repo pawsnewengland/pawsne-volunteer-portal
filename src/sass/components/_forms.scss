@@ -16,13 +16,16 @@ fieldset {
 legend,
 label {
 	display: block;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0 0 calc-em(5px);
 	padding: 0;
 }
 
+.label-checklist {
+	font-weight: normal;
+}
+
 legend {
-	font-weight: bold;
 	margin-bottom: calc-em(16px);
 }
 

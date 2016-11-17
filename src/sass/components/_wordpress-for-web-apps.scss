@@ -1,0 +1,23 @@
+/**
+ * @section WordPress For Web Apps
+ * WordPress for Web Apps overrides
+ */
+
+
+// Add more space after checkbox labels
+.wpwebapp-form-label-checkbox {
+	@extend .margin-bottom;
+	@extend .label-checklist;
+}
+
+// Remove bottom margin from inputs with a description below them
+.wpwebapp-form-input-has-description {
+	@extend .no-margin-bottom;
+}
+
+// Style form description text
+.wpwebapp-form-label-description {
+	@extend .text-small;
+	@extend .margin-bottom;
+	@extend .text-muted;
+}
