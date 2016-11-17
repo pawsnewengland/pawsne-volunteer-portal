@@ -2,7 +2,6 @@ astro.init();
 drop.init({
 	selector: '.menu-item-has-children'
 });
-formSaver.init();
 stickyFooter.init();
 
 fluidvids.init({
