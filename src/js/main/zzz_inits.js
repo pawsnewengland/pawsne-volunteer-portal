@@ -24,7 +24,7 @@ fluidvids.init({
 
 	// Inject password toggle
 	var div = document.createElement('div');
-	div.innerHTML = '<p>x</p><label class="x-ray"><input type="checkbox" data-x-ray=".wpwebapp-form-password" data-default="hide"> Show password</label>';
+	div.innerHTML = '<p>x</p><label class="x-ray margin-bottom"><input type="checkbox" data-x-ray=".wpwebapp-form-password" data-default="hide"> Show password</label>';
 	submit.parentNode.insertBefore( div.childNodes[1], submit );
 
 	// Initialize X-Ray

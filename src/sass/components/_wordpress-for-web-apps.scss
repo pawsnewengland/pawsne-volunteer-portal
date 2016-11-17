@@ -21,3 +21,7 @@
 	@extend .margin-bottom;
 	@extend .text-muted;
 }
+
+.js-x-ray .wpwebapp-form-label-checkbox {
+	@extend .no-margin-bottom;
+}

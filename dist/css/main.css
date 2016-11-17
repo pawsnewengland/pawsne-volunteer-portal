@@ -1,5 +1,5 @@
 /*!
- * pawsne-volunteer-portal v1.1.0: WordPress theme for PAWSNE volunteer portal
+ * pawsne-volunteer-portal v1.2.0: WordPress theme for PAWSNE volunteer portal
  * (c) 2016 Chris Ferdinandi
  * MIT License
  * https://github.com/pawsnewengland/pawsne-volunteer-portal
@@ -1986,7 +1986,7 @@ td {
 }
 
 /* line 154, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
-.no-margin-bottom, .wpwebapp-form-input-has-description {
+.no-margin-bottom, .wpwebapp-form-input-has-description, .js-x-ray .wpwebapp-form-label-checkbox {
   margin-bottom: 0;
 }
 
