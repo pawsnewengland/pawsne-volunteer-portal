@@ -630,3 +630,4 @@
 	require_once( dirname( __FILE__) . '/includes/keel-page-hero/keel-page-hero.php' ); // Page hero settings
 	require_once( dirname( __FILE__) . '/includes/keel-shortcodes/keel-button-shortcode.php' ); // Button links shortcodeshortcode
 	require_once( dirname( __FILE__) . '/includes/keel-set-page-width.php' ); // Custom page widths
+	require_once( dirname( __FILE__) . '/includes/keel-contact-form-7-overrides.php' ); // Contact Form 7
