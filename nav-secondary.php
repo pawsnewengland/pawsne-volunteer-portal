@@ -15,8 +15,7 @@
 			<?php
 				wp_nav_menu(
 					array(
-						'menu'           => 'Secondary',
-						'theme_location' => 'secondary',
+						'theme_location' => 'secondary-logged-in',
 						'container'      => false,
 						'depth'          => -1,
 						'menu_class'     => 'list-inline list-inline-responsive no-margin-bottom',
@@ -31,8 +30,7 @@
 			<?php
 				wp_nav_menu(
 					array(
-						'menu'           => 'Secondary',
-						'theme_location' => 'secondary',
+						'theme_location' => 'secondary-logged-out',
 						'container'      => false,
 						'depth'          => -1,
 						'menu_class'     => 'list-inline list-inline-responsive no-margin-bottom',

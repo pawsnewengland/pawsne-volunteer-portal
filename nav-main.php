@@ -33,8 +33,7 @@
 					<?php
 						wp_nav_menu(
 							array(
-								'menu'           => 'Primary',
-								'theme_location' => 'primary',
+								'theme_location' => 'primary-logged-in',
 								'container'      => false,
 								'menu_class'     => 'nav-navbar',
 							)
@@ -48,8 +47,7 @@
 					<?php
 						wp_nav_menu(
 							array(
-								'menu'           => 'Primary',
-								'theme_location' => 'primary',
+								'theme_location' => 'primary-logged-out',
 								'container'      => false,
 								'menu_class'     => 'nav-navbar',
 							)
