@@ -1,0 +1,10 @@
+/**
+ * @section Discussion Board
+ * Discussion Board overrides
+ */
+
+
+.ctdb-information-bar,
+.comment-reply-title {
+	@extend [hidden];
+}

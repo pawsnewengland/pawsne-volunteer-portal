@@ -1,5 +1,5 @@
 /*!
- * pawsne-volunteer-portal v1.3.0: WordPress theme for PAWSNE volunteer portal
+ * pawsne-volunteer-portal v1.4.0: WordPress theme for PAWSNE volunteer portal
  * (c) 2016 Chris Ferdinandi
  * MIT License
  * https://github.com/pawsnewengland/pawsne-volunteer-portal
@@ -702,7 +702,7 @@ pre code {
  * Primary buttons
  */
 /* line 10, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn, .wpcf7-submit, input[type="submit"] {
+.btn, input[type="submit"].wpcf7-submit, input[type="submit"] {
   background-color: #68a20a;
   border: 0.125em solid #68a20a;
   border-radius: 1px;
@@ -718,16 +718,13 @@ pre code {
 }
 
 /* line 24, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn:hover, .wpcf7-submit:hover, input[type="submit"]:hover,
+.btn:hover, input[type="submit"]:hover,
 a .btn:hover, .link-block-styled .btn:hover,
-a .wpcf7-submit:hover, .link-block-styled .wpcf7-submit:hover,
-a input[type="submit"]:hover, .link-block-styled input[type="submit"]:hover, .btn:focus, .wpcf7-submit:focus, input[type="submit"]:focus,
+a input[type="submit"]:hover, .link-block-styled input[type="submit"]:hover, .btn:focus, input[type="submit"]:focus,
 a .btn:focus, .link-block-styled .btn:focus,
-a .wpcf7-submit:focus, .link-block-styled .wpcf7-submit:focus,
-a input[type="submit"]:focus, .link-block-styled input[type="submit"]:focus, .btn:active, .wpcf7-submit:active, input[type="submit"]:active,
+a input[type="submit"]:focus, .link-block-styled input[type="submit"]:focus, .btn:active, input[type="submit"]:active,
 a .btn:active, .link-block-styled .btn:active,
-a .wpcf7-submit:active, .link-block-styled .wpcf7-submit:active,
-a input[type="submit"]:active, .link-block-styled input[type="submit"]:active, .btn.active, .active.wpcf7-submit, input.active[type="submit"] {
+a input[type="submit"]:active, .link-block-styled input[type="submit"]:active, .btn.active, input.active[type="submit"] {
   background-color: #3a5a06;
   border-color: #3a5a06;
   color: #ffffff;
@@ -757,34 +754,28 @@ a .btn-secondary:active, .link-block-styled .btn-secondary:active, .btn-secondar
  * Ghosted buttons
  */
 /* line 63, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn-ghost, .bg-dark .btn, .bg-dark .wpcf7-submit, .bg-dark input[type="submit"] {
+.btn-ghost, .bg-dark .btn, .bg-dark input[type="submit"] {
   background-color: transparent;
   border-color: #ffffff;
 }
 
 /* line 67, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn-ghost:hover, .bg-dark .btn:hover, .bg-dark .wpcf7-submit:hover, .bg-dark input[type="submit"]:hover,
+.btn-ghost:hover, .bg-dark .btn:hover, .bg-dark input[type="submit"]:hover,
 a .btn-ghost:hover, .link-block-styled .btn-ghost:hover,
 a .bg-dark .btn:hover, .bg-dark
 a .btn:hover, .link-block-styled .bg-dark .btn:hover, .bg-dark .link-block-styled .btn:hover,
-a .bg-dark .wpcf7-submit:hover, .bg-dark
-a .wpcf7-submit:hover, .link-block-styled .bg-dark .wpcf7-submit:hover, .bg-dark .link-block-styled .wpcf7-submit:hover,
 a .bg-dark input[type="submit"]:hover, .bg-dark
-a input[type="submit"]:hover, .link-block-styled .bg-dark input[type="submit"]:hover, .bg-dark .link-block-styled input[type="submit"]:hover, .btn-ghost:focus, .bg-dark .btn:focus, .bg-dark .wpcf7-submit:focus, .bg-dark input[type="submit"]:focus,
+a input[type="submit"]:hover, .link-block-styled .bg-dark input[type="submit"]:hover, .bg-dark .link-block-styled input[type="submit"]:hover, .btn-ghost:focus, .bg-dark .btn:focus, .bg-dark input[type="submit"]:focus,
 a .btn-ghost:focus, .link-block-styled .btn-ghost:focus,
 a .bg-dark .btn:focus, .bg-dark
 a .btn:focus, .link-block-styled .bg-dark .btn:focus, .bg-dark .link-block-styled .btn:focus,
-a .bg-dark .wpcf7-submit:focus, .bg-dark
-a .wpcf7-submit:focus, .link-block-styled .bg-dark .wpcf7-submit:focus, .bg-dark .link-block-styled .wpcf7-submit:focus,
 a .bg-dark input[type="submit"]:focus, .bg-dark
-a input[type="submit"]:focus, .link-block-styled .bg-dark input[type="submit"]:focus, .bg-dark .link-block-styled input[type="submit"]:focus, .btn-ghost:active, .bg-dark .btn:active, .bg-dark .wpcf7-submit:active, .bg-dark input[type="submit"]:active,
+a input[type="submit"]:focus, .link-block-styled .bg-dark input[type="submit"]:focus, .bg-dark .link-block-styled input[type="submit"]:focus, .btn-ghost:active, .bg-dark .btn:active, .bg-dark input[type="submit"]:active,
 a .btn-ghost:active, .link-block-styled .btn-ghost:active,
 a .bg-dark .btn:active, .bg-dark
 a .btn:active, .link-block-styled .bg-dark .btn:active, .bg-dark .link-block-styled .btn:active,
-a .bg-dark .wpcf7-submit:active, .bg-dark
-a .wpcf7-submit:active, .link-block-styled .bg-dark .wpcf7-submit:active, .bg-dark .link-block-styled .wpcf7-submit:active,
 a .bg-dark input[type="submit"]:active, .bg-dark
-a input[type="submit"]:active, .link-block-styled .bg-dark input[type="submit"]:active, .bg-dark .link-block-styled input[type="submit"]:active, .btn-ghost.active, .bg-dark .active.btn, .bg-dark .active.wpcf7-submit, .bg-dark input.active[type="submit"] {
+a input[type="submit"]:active, .link-block-styled .bg-dark input[type="submit"]:active, .bg-dark .link-block-styled input[type="submit"]:active, .btn-ghost.active, .bg-dark .active.btn, .bg-dark input.active[type="submit"] {
   background-color: #ffffff;
   border-color: #ffffff;
   color: #272727;
@@ -794,9 +785,8 @@ a input[type="submit"]:active, .link-block-styled .bg-dark input[type="submit"]:
  * Active state
  */
 /* line 84, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn:active, .wpcf7-submit:active, input[type="submit"]:active,
+.btn:active, input[type="submit"]:active,
 .btn.active,
-.active.wpcf7-submit,
 input.active[type="submit"] {
   box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
   outline: 0;
@@ -806,9 +796,8 @@ input.active[type="submit"] {
  * Disabled state
  */
 /* line 94, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn.disabled, .disabled.wpcf7-submit, input.disabled[type="submit"],
+.btn.disabled, input.disabled[type="submit"],
 .btn[disabled],
-[disabled].wpcf7-submit,
 input[disabled][type="submit"] {
   box-shadow: none;
   cursor: not-allowed;
@@ -820,7 +809,7 @@ input[disabled][type="submit"] {
  * Button size
  */
 /* line 106, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn-large, .wpcf7-submit {
+.btn-large, input[type="submit"].wpcf7-submit, .comment-respond .submit {
   font-size: 1em;
   line-height: normal;
   padding: 0.6875em 0.9375em;
@@ -845,7 +834,7 @@ input[type="button"].btn-block {
  * General styles
  */
 /* line 131, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn, .wpcf7-submit, input[type="submit"],
+.btn, input[type="submit"].wpcf7-submit, input[type="submit"],
 button,
 html input[type="button"],
 input[type="reset"],
@@ -864,9 +853,9 @@ input[type="submit"] {
  * Remove right margin on last element and inputs
  */
 /* line 152, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_buttons.scss */
-.btn:last-child, .wpcf7-submit:last-child, input[type="submit"]:last-child,
+.btn:last-child, input[type="submit"]:last-child,
 input.btn,
-input.wpcf7-submit,
+input[type="submit"].wpcf7-submit,
 input[type="submit"] {
   margin-right: 0;
 }
@@ -1034,7 +1023,7 @@ select:focus {
  * Inline inputs
  */
 /* line 141, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_forms.scss */
-.input-inline, .wpcf7-submit, input[type="submit"] {
+.input-inline, input[type="submit"].wpcf7-submit, input[type="submit"] {
   display: inline-block;
   margin-right: 0.5em;
   vertical-align: middle;
@@ -1850,6 +1839,10 @@ td {
 }
 
 /**
+ * @section Discussion Board
+ * Discussion Board overrides
+ */
+/**
  * @section WordPress For Web Apps
  * WordPress for Web Apps overrides
  */
@@ -1893,7 +1886,7 @@ td {
 }
 
 /* line 38, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
-.bg-dark .btn, .bg-dark .wpcf7-submit, .bg-dark input[type="submit"] {
+.bg-dark .btn, .bg-dark input[type="submit"] {
   color: #ffffff;
   text-decoration: none;
 }
@@ -1922,21 +1915,29 @@ td {
 }
 
 /**
+ * Font weight
+ */
+/* line 72, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+.text-normal {
+  font-weight: normal;
+}
+
+/**
  * Text sizes
  */
-/* line 73, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 81, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .text-small, .wpwebapp-form-label-description {
   font-size: 0.9375em;
 }
 
-/* line 77, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 85, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .text-large {
   font-size: 1.1875em;
   line-height: 1.4;
 }
 
 @media (min-width: 40em) {
-  /* line 77, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+  /* line 85, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
   .text-large {
     font-size: 1.3125em;
   }
@@ -1945,7 +1946,7 @@ td {
 /**
  * Text colors
  */
-/* line 91, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 99, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .text-muted, .wpwebapp-form-label-description {
   color: #808080;
 }
@@ -1953,31 +1954,31 @@ td {
 /**
  * Text alignment
  */
-/* line 100, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 108, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 104, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 112, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 108, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 116, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .text-left {
   text-align: left;
 }
 
 @media (min-width: 60em) {
-  /* line 113, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+  /* line 121, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
   .text-center-large {
     text-align: center;
   }
-  /* line 117, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+  /* line 125, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
   .text-right-large {
     text-align: right;
   }
-  /* line 121, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+  /* line 129, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
   .text-left-large {
     text-align: left;
   }
@@ -1986,19 +1987,19 @@ td {
 /**
  * Floats
  */
-/* line 131, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 139, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .float-left {
   float: left;
 }
 
-/* line 135, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 143, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .float-center {
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 141, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 149, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .float-right {
   float: right;
 }
@@ -2006,32 +2007,32 @@ td {
 /**
  * Margins
  */
-/* line 150, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 158, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .no-margin-top {
   margin-top: 0;
 }
 
-/* line 154, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 162, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .no-margin-bottom, .wpwebapp-form-input-has-description, .js-x-ray .wpwebapp-form-label-checkbox {
   margin-bottom: 0;
 }
 
-/* line 158, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 166, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .margin-top {
   margin-top: 1.5625em;
 }
 
-/* line 162, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 170, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .margin-bottom, .wpcf7-not-valid-tip, .wpwebapp-form-label-checkbox, .wpwebapp-form-label-description {
   margin-bottom: 1.5625em;
 }
 
-/* line 166, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 174, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .margin-bottom-small, .wpcf7-not-valid {
   margin-bottom: 0.5em;
 }
 
-/* line 170, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 178, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .margin-bottom-large {
   margin-bottom: 2em;
 }
@@ -2039,57 +2040,57 @@ td {
 /**
  * Padding
  */
-/* line 179, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 187, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .no-padding-top {
   padding-top: 0;
 }
 
-/* line 183, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 191, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .no-padding-bottom {
   padding-bottom: 0;
 }
 
-/* line 187, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 195, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding {
   padding: 1.5625em;
 }
 
-/* line 191, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 199, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-top {
   padding-top: 1.5625em;
 }
 
-/* line 195, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 203, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-top-small {
   padding-top: 0.5em;
 }
 
-/* line 199, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 207, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-top-large {
   padding-top: 2em;
 }
 
-/* line 203, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 211, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-top-xlarge {
   padding-top: 4em;
 }
 
-/* line 207, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 215, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-bottom {
   padding-bottom: 1.5625em;
 }
 
-/* line 211, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 219, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-bottom-small {
   padding-bottom: 0.5em;
 }
 
-/* line 215, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 223, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-bottom-large {
   padding-bottom: 2em;
 }
 
-/* line 219, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 227, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .padding-bottom-xlarge {
   padding-bottom: 4em;
 }
@@ -2102,7 +2103,7 @@ td {
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 233, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 241, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .screen-reader, .screen-reader-response, .svg .icon-fallback-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2119,7 +2120,7 @@ td {
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link https://www.drupal.org/node/897638
  */
-/* line 249, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 257, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .screen-reader-focusable:active,
 .screen-reader-focusable:focus {
   clip: auto;
@@ -2135,8 +2136,9 @@ td {
  * @affected IE 8/9/10
  * @link http://juicystudio.com/article/screen-readers-display-none.php
  */
-/* line 264, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
-[hidden], template, .tarpit {
+/* line 272, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+[hidden], template, .tarpit, .ctdb-information-bar,
+.comment-reply-title {
   display: none;
   visibility: hidden;
 }
@@ -2146,7 +2148,7 @@ td {
  * The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document.
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  */
-/* line 276, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 284, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .clearfix:before, .container:before,
 .row:before,
 .clearfix:after,
@@ -2156,7 +2158,7 @@ td {
   content: " ";
 }
 
-/* line 282, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
+/* line 290, /Users/cferdinandi/Sites/paws-new-england/wordpress/wp-content/themes/pawsne-volunteer-portal/src/sass/components/_overrides.scss */
 .clearfix:after, .container:after,
 .row:after {
   clear: both;

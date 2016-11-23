@@ -1,5 +1,5 @@
 /*!
- * pawsne-volunteer-portal v1.3.0: WordPress theme for PAWSNE volunteer portal
+ * pawsne-volunteer-portal v1.4.0: WordPress theme for PAWSNE volunteer portal
  * (c) 2016 Chris Ferdinandi
  * MIT License
  * https://github.com/pawsnewengland/pawsne-volunteer-portal

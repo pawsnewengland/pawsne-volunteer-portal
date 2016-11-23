@@ -264,7 +264,7 @@
 						<?php if ( $args['avatar_size'] !== 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
 					</figure>
 					<h3 class="no-padding-top no-margin-bottom">
-						<?php comment_author_link() ?>
+						<?php comment_author() ?>
 					</h3>
 					<aside class="text-muted">
 						<time datetime="<?php comment_date( 'Y-m-d' ); ?>" pubdate><?php comment_date('F jS, Y') ?></time>
@@ -304,25 +304,9 @@
 	function keel_comment_form() {
 
 		$commenter = wp_get_current_commenter();
-		global $user_identity;
 
-		$must_log_in =
-			'<p>' .
-				sprintf(
-					__( 'You must be <a href="%s">logged in</a> to post a comment.' ),
-					wp_login_url( apply_filters( 'the_permalink', get_permalink() ) )
-				) .
-			'</p>';
-
-		$logged_in_as =
-			'<p>' .
-				sprintf(
-					__( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s">Log out.</a>' ),
-					admin_url( 'profile.php' ),
-					$user_identity,
-					wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
-				) .
-			'</p>';
+		$must_log_in = '';
+		$logged_in_as = '';
 
 		$notes_before = '';
 		$notes_after = '';
@@ -347,7 +331,7 @@
 
 		$field_comment =
 			'<div>' .
-				'<label for="comment"><strong>' . __( 'Comment' ) . '</strong></label>' .
+				'<label class="text-large padding-top" for="comment"><strong>' . __( 'Reply' ) . '</strong></label>' .
 				'<textarea name="comment" id="comment" required></textarea>' .
 			'</div>';
 
@@ -355,7 +339,7 @@
 			'title_reply' => __( 'Leave a Comment' ),
 			'title_reply_to' => __( 'Reply to %s' ),
 			'cancel_reply_link' => __( '[Cancel]' ),
-			'label_submit' => __( 'Submit Comment' ),
+			'label_submit' => __( 'Submit Response' ),
 			'comment_field' => $field_comment,
 			'must_log_in' => $must_log_in,
 			'logged_in_as' => $logged_in_as,

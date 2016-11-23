@@ -15,6 +15,10 @@ get_header(); ?>
 		if ( !is_post_type_archive( array( 'keel-pets', 'keel-events' ) ) ) :
 	?>
 		<header>
+			<?php if ( is_post_type_archive( 'discussion-topics' ) ) : ?>
+				<?php $new_topic = get_page_by_title( 'Create a Topic' ); ?>
+				<a class="btn float-right margin-top margin-bottom-small" href="<?php echo get_the_permalink( $new_topic->ID ); ?>"><?php _e( 'Create a Topic', 'keel' ); ?></a>
+			<?php endif; ?>
 			<h1>
 				<?php if ( is_category() ) : // If this is a category archive ?>
 					<?php _e( 'Category:', 'keel' ); ?> <?php single_cat_title(); ?>...
@@ -28,6 +32,8 @@ get_header(); ?>
 					<?php _e( 'Year:', 'keel' ); ?> <?php the_time('Y'); ?>...
 				<?php elseif ( is_author() ) : // If this is an author archive ?>
 					<?php _e( 'Author Archive', 'keel' ); ?>
+				<?php elseif ( is_post_type_archive( 'discussion-topics' ) ) : ?>
+					<?php _e( 'Discussion Board', 'keel' ); ?>
 				<?php elseif (isset($_GET['paged']) && !empty($_GET['paged'])) : // If this is a paged archive ?>
 					<?php _e( 'Blog Archive', 'keel' ); ?>
 				<?php endif; ?>
@@ -135,6 +141,18 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<?php if ( is_post_type_archive( 'discussion-topics' ) ) : ?>
+			<table class="table-responsive">
+				<thead>
+					<tr>
+						<th><?php _e( 'Topic', 'keel' ); ?></th>
+						<th><?php _e( 'Replies', 'keel' ); ?></th>
+						<th><?php _e( 'Since', 'keel' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+		<?php endif; ?>
+
 					<?php
 						// Start the loop
 						while (have_posts()) : the_post();
@@ -144,6 +162,12 @@ get_header(); ?>
 							get_template_part( 'content', get_post_type() );
 						?>
 					<?php endwhile; ?>
+
+		<?php if ( is_post_type_archive( 'discussion-topics' ) ) : ?>
+				</tbody>
+			</table>
+			<p class="text-right"><a class="btn" href="<?php echo get_the_permalink( $new_topic->ID ); ?>"><?php _e( 'Create a Topic', 'keel' ); ?></a></p>
+		<?php endif; ?>
 
 		<?php
 			// End pet listings grid
@@ -164,10 +188,16 @@ get_header(); ?>
 
 
 <?php else : ?>
-	<?php
-		// If no content, include the "No post found" template
-		get_template_part( 'content', 'none' );
-	?>
+	<?php if ( is_post_type_archive( 'discussion-topics' ) ) : ?>
+		<h1><?php _e( 'Discussion Board', 'keel' ); ?></h1>
+		<p><?php _e( 'There aren\'t any discussion topics yet. Want to start one?', 'keel' ); ?></p>
+		<?php echo do_shortcode( '[discussion_board_form]' ); ?>
+	<?php else : ?>
+		<?php
+			// If no content, include the "No post found" template
+			get_template_part( 'content', 'none' );
+		?>
+	<?php endif; ?>
 <?php endif; ?>
 
 

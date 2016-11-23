@@ -19,6 +19,11 @@ input[type="submit"] {
 }
 
 
+.comment-respond .submit {
+	@extend .btn-large;
+}
+
+
 // Spam blocker
 .tarpit {
 	@extend [hidden];

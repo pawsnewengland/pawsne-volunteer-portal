@@ -21,7 +21,7 @@
 	display: block;
 }
 
-.wpcf7-submit {
+input[type="submit"].wpcf7-submit {
 	@extend .btn;
 	@extend .btn-large;
 	@extend .input-inline;
